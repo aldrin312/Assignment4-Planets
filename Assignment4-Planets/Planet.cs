@@ -21,8 +21,81 @@ namespace Assignment4_Planets
 		private string _name;
 		private double _orbitalPeriod;
 		private int _ringCount;
-		private double rotationalPeriod;
+		private double _rotationalPeriod;
 		//PUBLIC PROTPERTIES
+		public double Diameter
+		{
+			get
+			{
+				return this._diameter;
+			}
+		}
+
+		public double Mass
+		{
+			get
+			{
+				return this._mass;
+			}
+		}
+
+		public int MoonCount
+		{
+			get
+			{
+				return this._moonCount;
+			}
+			set
+			{
+				this._moonCount = value;
+			}
+		}
+
+		public string Name
+		{
+			get
+			{
+				return this._name;
+			}
+		}
+
+		public double OrbitalPeriod
+		{
+			get
+			{
+				return this._orbitalPeriod;
+			}
+			set
+			{
+				this._orbitalPeriod = value;
+			}
+		}
+
+		public int RingCount
+		{
+			get
+			{
+				return this._ringCount;
+			}
+			set
+			{
+				this._ringCount = value;
+			}
+		}
+
+		public double RotationPerion
+		{
+			get
+			{
+				return this._rotationalPeriod;
+			}
+			set
+			{
+				this._rotationalPeriod = value;
+			}
+		}
+
+
 
 		//CONSTRUCTOR----------------------------------------------------------------
 
