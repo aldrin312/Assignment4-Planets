@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Assignment4_Planets
 {
-	class Planet
+	public abstract class Planet
 	{
 		//PRIVATE INTANCE VARIABLES
 		private double _diameter;
@@ -99,7 +99,32 @@ namespace Assignment4_Planets
 
 		//CONSTRUCTOR----------------------------------------------------------------
 
-		//PUBLIC METHIDS
+			/// <summary>
+			/// planet class constructor
+			/// </summary>
+			/// <param name="name"></param>
+			/// <param name="mass"></param>
+			/// <param name="diameter"></param>
+		public Planet (string name, double mass, double diameter)
+		{
+			this._name = name;
+			this._diameter = diameter;
+			this._mass = mass;
+			
+		}
+
+
+		//PUBLIC METHODS
+		/// <summary>
+		/// ToString overide
+		/// </summary>
+		/// <returns></returns>
+		public override string ToString()
+		{
+			string outPutString = string.Format("{0}  {1}  {2}",this.Name,this.Diameter,this.Mass);
+			return outPutString;
+			
+		}
 
 		//PRIVATE METHODS
 	}
