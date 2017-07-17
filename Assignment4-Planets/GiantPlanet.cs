@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Assignment4_Planets
 {
-	class GiantPlanet :Planet
+	class GiantPlanet :Planet, IHasMoons, IHasRings
 	{
 		//PRIVATE INTANCE VARIABLES
 		private string _type;
@@ -34,9 +34,40 @@ namespace Assignment4_Planets
 			this._type = type;
 		}
 
-			
 
 		//PUBLIC METHODS
+		/// <summary>
+		/// HasMoons method
+		/// </summary>
+		/// <returns></returns>
+		public bool HasMoons()
+		{
+			if (this.MoonCount > 0)
+			{
+				return true;
+			} else
+			{
+				return false;
+			}
+		}
+
+		/// <summary>
+		/// HasRings method
+		/// </summary>
+		/// <returns></returns>
+		public bool HasRings()
+		{
+			if (RingCount > 0)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+
 
 		//PRIVATE METHODS
 	}
