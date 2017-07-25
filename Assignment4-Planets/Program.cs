@@ -17,6 +17,7 @@ namespace Assignment4_Planets
     {
         static void Main(string[] args)
         {
+			GiantPlanet giantPlanet = new GiantPlanet(
         }
     }
 }

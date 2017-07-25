@@ -8,6 +8,6 @@ namespace Assignment4_Planets
 {
 	interface IHabitable
 	{
-		bool Habitable { get; set; }
+		bool Habitable();
 	}
 }

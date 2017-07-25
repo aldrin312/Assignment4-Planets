@@ -121,7 +121,7 @@ namespace Assignment4_Planets
 		/// <returns></returns>
 		public override string ToString()
 		{
-			string outPutString = string.Format("{0}  {1}  {2}",this.Name,this.Diameter,this.Mass);
+			string outPutString = string.Format("{0}  {1}km  {2}kg",this.Name,this.Diameter,this.Mass);
 			return outPutString;
 			
 		}

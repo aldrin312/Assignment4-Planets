@@ -12,11 +12,16 @@ using System.Threading.Tasks;
 
 namespace Assignment4_Planets
 {
-	class TerrestrialPlanet: Planet, IHasMoons
+	class TerrestrialPlanet: Planet, IHasMoons, IHabitable
 	{
 		//PRIVATE INTANCE VARIABLES
 
 		private bool _oxygen;
+
+
+
+
+
 
 		//PUBLIC PROTPERTIES
 
