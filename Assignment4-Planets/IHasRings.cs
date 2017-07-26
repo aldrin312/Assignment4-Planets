@@ -14,7 +14,7 @@ namespace Assignment4_Planets
 {
 	interface IHasRings
 	{
-		int RingCount { get; set; }
+		bool HasRings();
 
 	}
 }
